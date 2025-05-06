@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "2klX2NV1twwAJVfimM1M+Mhx91qS7gQ45+xG8hcCiRo=",
+  "Source": "ChefGeminiAPI",
+  "BasePath": "_content/ChefGeminiAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
