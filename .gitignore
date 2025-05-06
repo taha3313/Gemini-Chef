@@ -1,0 +1,93 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime
+node_modules
+dist
+dist-ssr
+*.local
+
+# .env files
+.env
+.env.*.local
+.env.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+#############################
+# .NET / Visual Studio Files
+#############################
+
+# Build results
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono auto generated files
+mono_crash.*
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Visual Studio Code
+.history/
+.vscode/test.code-workspace
+
+# Visual Studio profiler
+*.vsp
+*.vspx
+*.sap
+
+# Visual Studio 2019/2022 .NET Core Secrets
+secrets.json
+
+# Rider
+.idea/
+
+# ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+# Backup & crash reports
+*.bak
+*.orig
+
+# Publish directory
+publish/
+wwwroot/
+
+# Global tools (like dotnet tools manifest)
+.tool-manifest
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# JetBrains Rider logs
+.idea/
+
+# Auto-generated files from Entity Framework
+Migrations/
+
+# dotnet watch temporary files
+**/.dotnet-watch.json
