@@ -12,7 +12,6 @@
 - Generate recipes with Gemini API
 - Markdown-formatted recipe display with **React Markdown**
 - Save favorite recipes (requires login)
-- Notifications with a **bottom-corner modal**
 - Authentication-aware interface (login/register/logout)
 - Styled using **Tailwind CSS**
 - Mobile-first responsive layout
