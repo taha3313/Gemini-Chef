@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChefGeminiAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+070e5e7fdfc8b7b0bad109dd471029a1720ae1d6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0fa51195338c32d674c8720a4db9055bc7d686f6")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChefGeminiAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChefGeminiAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
