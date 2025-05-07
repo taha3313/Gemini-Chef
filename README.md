@@ -1,6 +1,6 @@
-# 🍽️ Gemeni Chef
+# 🍽️ Gemini Chef
 
-**Gemeni Chef** is a full-stack AI-powered recipe generator. Enter your available ingredients, and the app will use Google's Gemini API to create delicious, unique recipes. Users can sign up, log in, and save favorite dishes using a clean interface built with React and a robust .NET backend.
+**Gemini Chef** is a full-stack AI-powered recipe generator. Enter your available ingredients, and the app will use Google's Gemini API to create delicious, unique recipes. Users can sign up, log in, and save favorite dishes using a clean interface built with React and a robust .NET backend.
 
 ---
 
@@ -46,5 +46,3 @@
 - CORS
 
 ---
-
-
