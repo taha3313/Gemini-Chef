@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PgofCbz8k+E=",
+  "dgSpecHash": "Zel3oWd/tSA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\chell\\source\\repos\\ChefGeminiAPI\\ChefGeminiAPI.csproj",
+  "projectFilePath": "C:\\Users\\chell\\Downloads\\React Projects\\Gemini Chef\\ChefGeminiAPI\\ChefGeminiAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chell\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\chell\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

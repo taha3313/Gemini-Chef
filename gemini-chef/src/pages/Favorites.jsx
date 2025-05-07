@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import { logout } from "../services/auth";
+import truncate from 'html-truncate';
+
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
@@ -18,6 +20,12 @@ export default function Favorites() {
       return;
     }
 
+    function truncateHTML(html, limit) {
+      const div = document.createElement("div");
+      div.innerHTML = html;
+      const text = div.textContent || div.innerText || "";
+      return text.length > limit ? text.substring(0, limit) + "..." : text;
+    }
     async function fetchRecipes() {
       try {
         const res = await fetch("https://localhost:7155/api/recipe/favorites", {
@@ -46,7 +54,12 @@ export default function Favorites() {
 
     fetchRecipes();
   }, []);
-
+  function truncateHTML(html, limit) {
+    const div = document.createElement("div");
+    div.innerHTML = html;
+    const text = div.textContent || div.innerText || "";
+    return text.length > limit ? text.substring(0, limit) + "..." : text;
+  }
   const handleDelete = async () => {
     const token = localStorage.getItem("token");
     if (!token || !selectedRecipe) return;
@@ -104,10 +117,11 @@ export default function Favorites() {
 
               <div>
                 <pre className="whitespace-pre-wrap mt-2 text-sm text-gray-700">
-                <div
-        className="prose prose-amber prose-sm sm:prose lg:prose-lg dark:prose-invert"
-        dangerouslySetInnerHTML={{ __html: recipe.content.slice(0, 100) }}
-      />
+{     !recipe.showFullContent     &&      <div
+  className="prose prose-amber prose-sm sm:prose lg:prose-lg dark:prose-invert"
+  dangerouslySetInnerHTML={{ __html: truncate(recipe.content, 100) }}
+/>}
+
                   ...
                 </pre>
 
@@ -125,9 +139,10 @@ export default function Favorites() {
 
                 {recipe.showFullContent && (
                   <div className="mt-2">
-                    <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                      {recipe.content}
-                    </ReactMarkdown>
+                <div
+        className="prose prose-amber prose-sm sm:prose lg:prose-lg dark:prose-invert"
+        dangerouslySetInnerHTML={{ __html: recipe.content}}
+      />
                   </div>
                 )}
               </div>

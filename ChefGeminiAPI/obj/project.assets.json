@@ -4928,11 +4928,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chell\\source\\repos\\ChefGeminiAPI\\ChefGeminiAPI.csproj",
+      "projectUniqueName": "C:\\Users\\chell\\Downloads\\React Projects\\Gemini Chef\\ChefGeminiAPI\\ChefGeminiAPI.csproj",
       "projectName": "ChefGeminiAPI",
-      "projectPath": "C:\\Users\\chell\\source\\repos\\ChefGeminiAPI\\ChefGeminiAPI.csproj",
+      "projectPath": "C:\\Users\\chell\\Downloads\\React Projects\\Gemini Chef\\ChefGeminiAPI\\ChefGeminiAPI.csproj",
       "packagesPath": "C:\\Users\\chell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chell\\source\\repos\\ChefGeminiAPI\\obj\\",
+      "outputPath": "C:\\Users\\chell\\Downloads\\React Projects\\Gemini Chef\\ChefGeminiAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

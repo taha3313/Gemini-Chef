@@ -84,13 +84,20 @@ export default function Main() {
         setInput("");
         setSuggestions([]);
     }
-
+     function extractTitleFromHtml(htmlString) {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(htmlString, "text/html");
+    
+        const titleElement = doc.querySelector('.recipetitle');
+        return titleElement ? titleElement.textContent.trim() : null;
+    }
+    
     async function getRecipe() {
         setLoading(true);
         try {
             const recipeMarkdown = await getRecipeFromGemini(ingredients);
             setRecipe(recipeMarkdown);
-            const extractedTitle = recipeMarkdown.split('\n').find(line => line.startsWith('#'))?.replace(/^#\s*/, '').trim();
+            const extractedTitle = extractTitleFromHtml(recipeMarkdown);
             setTitle(extractedTitle || "Generated Recipe");
         } catch (error) {
             console.error("Error fetching recipe:", error);
